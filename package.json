@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-  "build": "npx vite build"
-}
-,
+    "postinstall": "chmod +x node_modules/.bin/vite",
+    "build": "npx vite build"
+  },
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
@@ -68,7 +68,7 @@
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
-    "vite": "^6.3.5"
+    "vite": "^6.4.1"
   },
   "peerDependencies": {
     "react": "18.3.1",
